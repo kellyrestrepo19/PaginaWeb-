@@ -1,7 +1,7 @@
 import random
 empleados = []
-for _ in range(200):
-    id = random.randint(1,200)
+for _ in range(2000):
+    id = random.randint(1,2000)
     nombre = random.choice([
         "Juan", "María", "Carlos", "Ana", "Luis", "Laura", "Pedro", "Isabel", "Sergio", "Carmen", "Diego", "Elena", "Miguel", "Natalia", "Javier",
         "Sara", "Ricardo", "Pilar", "Gustavo", "Lorena", "Francisco", "Lucía", "Alejandro", "Raquel", "Roberto", "Beatriz", "Antonio", "Sofía",
@@ -59,6 +59,6 @@ for _ in range(200):
         '301480959', '335326763', '338907440', '324399307', '327466628', '335473332', '318005074', '335630349',
         '328491061', '325322980', '304442897', '327814237', '314856563', '318975656', '307955912', '331726846',
         '316510808', '336371350', '304213606', '306586235'])
-    empleado = [id,nombre,apellidos,edad, salario,deudas,retencionFuente,cargo,correo,telefono,]
+    empleado = [id,nombre,apellidos,edad, salario,deudas,retencionFuente,cargo,correo,telefono]
     empleados.append(empleado)
-    print(empleados)
+   

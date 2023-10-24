@@ -23,6 +23,4 @@ for _ in range(1000):
         "Valenzuela Ríos", "Ríos Rojas"])
     costo = random.randint(150000, 1000000)
     orden = [numeroOrden,fechaOrden,nombreClientes,apellidoClientes, costo]
-    ventas.append(orden)
-print(ventas)
-    
+    ventas.append(orden)    
