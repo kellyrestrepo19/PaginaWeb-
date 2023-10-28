@@ -7,4 +7,10 @@ from data.empleados import empleados
 empleadosCSV(empleados,'empleados.csv')
 
 empleadosDataFrame = pd.read_csv('data/empleados.csv')
-print(empleadosDataFrame)
+#print(empleadosDataFrame)
+
+estadisticasEmpleados=empleadosDataFrame.head(50)
+print(estadisticasEmpleados)
+print("\n")
+
+
