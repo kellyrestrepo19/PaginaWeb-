@@ -1,73 +1,25 @@
 import pandas as pd
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
-
-from helpers.empleadosCSV import empleadosCSV
-from data.ventas import ventas
-from data.crearCSV import crearCSV
+from helpers.ventasCSV import ventaCSV
 from helpers.CrearTablaHTML import crearTabla
-from data.empleados import empleados
-from data.productos import productos
+from data.ventas import ventas
 
-crearCSV(ventas,'ventas.csv')
-empleadosCSV(empleados,'empleados.csv')
-crearCSV(productos,'productos.csv')
+ventaCSV(ventas,'ventas.csv')
 
-
-
-ventasDataFrame = pd.read_csv('data/ventas.csv')
-empleadosDataFrame = pd.read_csv('data/empleados.csv')
-productosDataFrame = pd.read_csv('data/productos.csv')
-crearTabla(ventasDataFrame, 'tablaVentas')
-crearTabla(empleadosDataFrame, 'tablaEmpleados')
-crearTabla(productosDataFrame, 'tablaProductos')
-
+ventasDataFrame = pd.read_csv('data/ventas.csv',encoding='')
 #print(ventasDataFrame)
-#print(empleadosDataFrame)
-#print(productosDataFrame)
 
+#crearTabla(ventasDataFrame,'tablaventas')
 
-estadisticasVentas=ventasDataFrame.head(50)
-estadisticaGeneralVentas=ventasDataFrame.describe()
-infoGeneralVentas=ventasDataFrame.info()
-
-estadisticasEmpleados=empleadosDataFrame.head(50)
-estadisticaGeneralEmpleados=empleadosDataFrame.describe()
-infoGeneralEmpleados=empleadosDataFrame.info()
+#estadisticasVentas=ventasDataFrame.head(50)
 #print(estadisticasVentas)
-#print(estadisticaGeneralVentas)
-#print(infoGeneralVentas)
-#print(estadisticasEmpleados)
 #print("\n")
 
-
-
 #4. Filtrar y ordenar(limpiar)
-filtroUno=ventasDataFrame.query("(Costo>=290000) and (Costo<=300000)")
-totalventas=filtroUno[['Costo','Cliente']]
-
-#generando html con resultados del filtro
-crearTabla(filtroUno,'ventasBajoCosto')
-
+filtroUno=ventasDataFrame.query("(costo>=290000) and (costo<=300000)")
+print(filtroUno)
+totalventas=filtroUno[['costo','producto']]
+print(totalventas)
 
 
-#6. Presentar y exportar los datos
-ventasAltas=ventasDataFrame.nlargest(5,"Costo")
-ventasBajas=ventasDataFrame.nsmallest(5,"Costo")
-print(ventasBajas)
-
-#Graficando un DATAFRAME CON MATPLOTLIB
-ventasAltas["NumeroOrden"]=ventasAltas["NumeroOrden"].astype(str)
-colores=['blue','green','#EFEC1B','orange','purple']
-plt.figure(figsize=(10,10))
-plt.bar(ventasAltas["NumeroOrden"],ventasAltas["Costo"], color=colores)
-
-#Personalizando la gráfica
-
-plt.xlabel("Cliente")
-plt.ylabel("Costo")
-plt.title("Ventas mas altas en ultimo mes")
-plt.xticks(rotation=45)
-
-rutaGrafica="figuras/barrasventa.png"
-plt.savefig(rutaGrafica)

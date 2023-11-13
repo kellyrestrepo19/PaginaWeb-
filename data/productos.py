@@ -17,6 +17,5 @@ for _ in range(3000):
 ])
     costo = random.randint(150000, 600000)
     iva=random.randint(0,19)
-    pt = [idProducto, nomProducto, costo, (costo*iva)]
-    productos.append(pt)
-    print(productos)
+    producto = [idProducto, nomProducto, costo, (costo*iva)]
+    productos.append(producto)

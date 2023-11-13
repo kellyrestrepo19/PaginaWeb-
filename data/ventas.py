@@ -35,5 +35,5 @@ for _ in range(1000):
         "Pantalones cargo","Vestido de verano","Zapatos de lona","Blusa estampada","Cartera","Shorts de playa","Gorros de baño",
         "Leggings deportivos",
         "Abrigo largo"])
-    orden = [numeroOrden,fechaOrden,nombreClientes,apellidoClientes, costo, producto]
-    ventas.append(orden)    
+    venta = [numeroOrden,fechaOrden,nombreClientes,apellidoClientes, costo, producto]
+    ventas.append(venta)    
