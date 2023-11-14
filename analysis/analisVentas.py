@@ -17,7 +17,7 @@ ventasDataFrame = pd.read_csv('data/ventas.csv',encoding='')
 #print("\n")
 
 #4. Filtrar y ordenar(limpiar)
-filtroUno=ventasDataFrame.query("(costo>=290000) and (costo<=300000)")
+filtroUno =ventasDataFrame.query("(costo>=290000) and (costo<=300000)")
 print(filtroUno)
 totalventas=filtroUno[['costo','producto']]
 print(totalventas)
