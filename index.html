@@ -21,121 +21,213 @@
             <section class="col-12 col-md-3 bg-dark text-white columnaAdaptada">
                 <div class="row text-center p-3">
 
-                    <div class="col-12 my-5">
+                    <div class="col-12 my-5 text-warning">
                         <h3>LDA</h3>
                     </div>
 
-                    <div class="col-12 border p-5 seleccion">
+                    <div class="col-12 border p-5 seleccion text-warning">
                         <h4>Dashboard <span><i class="bi bi-speedometer"></i></span></h4>
                     </div>
                 </div>
                 <div class="row text-center p-3">
-                    <div class="col-12 border p-5 seleccion">
+                    <div class="col-12 border p-5 seleccion text-warning">
                         <h4>Importar datos <span><i class="bi bi-database-fill-up"></i></span></h4>
                     </div>
                 </div>
                 <div class="row text-center p-3">
-                    <div class="col-12 border p-5 seleccion">
+                    <div class="col-12 border p-5 seleccion text-warning">
                         <h4>Analisis ventas <span><i class="bi bi-clipboard-data"></i></span></h4>
                     </div>
                 </div>
-                <div class="row text-center p-3">
-                    <div class="col-12 border p-5 seleccion">
-                        <h4>Exportar informe <span><i class="bi bi-database-down"></i></span></h4>
-                    </div>
-                </div>
+                
             </section>
             <section class="col-12 col-md-9">
-                <div class="row row-cols-1 row-cols-md-3 my-3">
-                    <div class="col">
-                        <div class="card bg-secondary text-white p-2 shadow">
-                            <h3>TITULO 1</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus unde cumque veritatis
-                                dolorum eos cum consequatur illum vitae iure ex ut dignissimos provident consectetur,
-                                enim, laudantium culpa omnis! Reiciendis, architecto!</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card bg-secondary text-white p-2 shadow">
-                            <h3>TITULO 2</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus unde cumque veritatis
-                                dolorum eos cum consequatur illum vitae iure ex ut dignissimos provident consectetur,
-                                enim, laudantium culpa omnis! Reiciendis, architecto!</p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card bg-secondary text-white p-2 shadow">
-                            <h3>TITULO 3</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus unde cumque veritatis
-                                dolorum eos cum consequatur illum vitae iure ex ut dignissimos provident consectetur,
-                                enim, laudantium culpa omnis! Reiciendis, architecto!</p>
-                        </div>
-                    </div>
-                </div>
-                <section class="row bg-dark my-5 p-4">
-                    <div class="col-12 col-md-8 border-end">
-                        <h3>Análisis de datos</h3>
+              
+                <section class="row my-5 p-4">
+                    <div class="col-12 col-md-8 border-end text-warning">
+                        <h3 class="text-warning">Análisis de datos</h3>
                         <hr>
-                        <table class="table table-striped my-5">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>simon</td>
-                                    <td>kelly</td>
-                                    <td>santiago</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="row">
-                            <div class="col-12 col-md-4 text-center">
-                                <div class="card shadow p-5">
-                                    <h2>65%</h2>
-                                </div>
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home-tab-pane" type="button" role="tab"
+                                    aria-controls="home-tab-pane" aria-selected="true">Productos</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                    aria-controls="profile-tab-pane" aria-selected="false">Ventas</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="empleado-tab" data-bs-toggle="tab"
+                                    data-bs-target="#empleado-tab-pane" type="button" role="tab"
+                                    aria-controls="empleado-tab-pane" aria-selected="false" >Empleados</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="productobajocosto-tab" data-bs-toggle="tab"
+                                    data-bs-target="#productobajocosto-tab-pane" type="button" role="tab"
+                                    aria-controls="productobajocosto-tab-pane" aria-selected="false">Productos Bajo Costo</button>
+                            </li>
+                            
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="empleados jovenes-tab" data-bs-toggle="tab"
+                                    data-bs-target="#empleadosjovenes-tab-pane" type="button" role="tab"
+                                    aria-controls="empleadosjovenes-tab-pane" aria-selected="false">Empleados Jovenes</button>
+                            </li>
+
+                        </ul>
+
+
+
+                        <div class="tab-content text-warning" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                aria-labelledby="home-tab" tabindex="0">
+                            <iframe src="./tables/tablaProductos.html" frameborder="0" class="w-100" height="400"></iframe>
                             </div>
-                            <div class="col-12 col-md-4 text-center">
-                                <div class="card shadow p-5">
-                                    <h2>15%</h2>
-                                </div>
+                            <div class="tab-pane fade text-warning" id="profile-tab-pane" role="tabpanel"
+                                aria-labelledby="profile-tab" tabindex="0">
+                                <iframe src="./tables/tablaVentas.html" frameborder="0" class="w-100" height="400"></iframe>
                             </div>
-                            <div class="col-12 col-md-4 text-center">
-                                <div class="card shadow p-5">
-                                    <h2>20%</h2>
-                                </div>
+                            <div class="tab-pane fade" id="empleado-tab-pane" role="tabpanel"
+                                aria-labelledby="empleado-tab" tabindex="0">
+                                <iframe src="./tables/tablaEmpleados.html" frameborder="0" class="w-100" height="400"></iframe>
+                            </div>
+                            <div class="tab-pane fade" id="productobajocosto-tab-pane" role="tabpanel"
+                                aria-labelledby="productobajocosto-tab" tabindex="0">
+                                <iframe src="./tables/productosBajoCosto.html" frameborder="0" class="w-100" height="400"></iframe>
+                            </div>
+                            
+                            <div class="tab-pane fade" id="empleadosjovenes-tab-pane" role="tabpanel"
+                                aria-labelledby="empleadosjovenes-tab" tabindex="0">
+                                <iframe src="./tables/empleadosJovenes.html" frameborder="0" class="w-100" height="400"></iframe>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="col-12 col-md-4">
-                        <img src="./figuras/barraSalario.png" alt="img" class="w-100 d-block mx-auto shadow">
-                    </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="barraProducto" data-bs-toggle="tab"
+                                    data-bs-target="#barraproducto-tab-pane" type="button" role="tab"
+                                    aria-controls="barraproducto-tab-pane" aria-selected="true">Productos Baratos</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="barrasalario-tab" data-bs-toggle="tab"
+                                    data-bs-target="#barrasalario-tab-pane" type="button" role="tab"
+                                    aria-controls="barrasalario-tab-pane" aria-selected="false">Salarios Altos</button>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content text-warning" id="myTabContent">
+                            <div class="tab-pane fade show active" id="barraproducto-tab-pane" role="tabpanel"
+                                aria-labelledby="barraproducto-tab" tabindex="0">
+                            <img src="./figuras/barraProducto.png"alt="img" class="w-100 d-block mx-auto shadow">
+                            </div>
+                            <div class="tab-pane fade" id="barrasalario-tab-pane" role="tabpanel"
+                                aria-labelledby="barrasalario-tab" tabindex="0">
+                                <img src="./figuras/barraSalario.png"alt="img" class="w-100 d-block mx-auto shadow">
+                            </div>
+                            
+                        </div>
                 </section>
             </section>
         </div>
 
 
     </main>
-    <footer>
-
-    </footer class="bg-dark">
+    <footer class="text-center text-lg-start bg-warning text-muted text-white">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>     Siguenos en nuestras Redes Sociales</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div class=" ">
+            <a href="" class="me-4 text-reset ">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="bi bi-google"> </i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class=" text-dark">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-dark">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Productos
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Gorras</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Camisas</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Cargo</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Chaquetas</a>
+                </p>
+              </div>
+              
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-dark">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                <p><i class="bi bi-house me-3"></i>Medellin, Antioquia</p>
+                <p>
+                  <i class="bi bi-envelope me-3"></i>
+                  ldaclothing@gmail.com
+                </p>
+                <p><i class="bi bi-phone me-3"></i> +57 304-440-48-45</p>
+                <p><i class="bi bi-phone me-3"></i> +57 317-518-93-55</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="">Grupo LDA Clothing Medellin</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
     <script class="bg-dark" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
